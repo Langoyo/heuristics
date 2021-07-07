@@ -144,8 +144,6 @@ if __name__ == '__main__':
 
             for antenna_i in range(len(constraint_5)-1):
                 for antenna_j in range(antenna_i + 1, len(constraint_5)):
-                    print("Satellites to be compared"+before_satellite +" "+after_satellite)
-                    print("Constraint satellites"+constraint_5[antenna_i]+" "+constraint_5[antenna_j])
                     problem.addConstraint(lambda before_satellite, after_satellite:
                                 not(            
                                     (before_satellite == constraint_5[antenna_i] and after_satellite == constraint_5[antenna_j]) 
