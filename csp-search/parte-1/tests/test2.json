@@ -1,0 +1,62 @@
+    {
+        "data": {
+            "SAT1": {
+                "0-12": [
+                    "ANT1",
+                    "ANT2",
+                    "ANT3",
+                    "ANT4"
+                ]
+            },
+            "SAT2": {
+                "0-12": [
+                    "ANT1",
+                    "ANT2",
+                    "ANT3"
+                ]
+            },
+            "SAT3": {
+                "6-12": [
+                    "ANT4",
+                    "ANT6"
+                ],
+                "13-16": [
+                    "ANT7",
+                    "ANT9",
+                    "ANT10"
+                ]
+            },
+            "SAT4": {
+                "16-0": [
+                    "ANT8",
+                    "ANT11",
+                    "ANT12"
+                ]
+            },
+            "SAT5": {
+                "6-13": [
+                    "ANT1",
+                    "ANT7",
+                    "ANT12"
+                ]
+            },
+            "SAT6": {
+                "9-13": [
+                    "ANT7",
+                    "ANT9"
+                ],
+                "13-19": [
+                    "ANT3",
+                    "ANT4",
+                    "ANT5"
+                ]
+            }
+        }, 
+    "constraints": {
+        "constraint_2": ["SAT1", "SAT2"], 
+        "constraint_3": ["SAT2","SAT4","SAT5","SAT6","SAT3"],
+        "constraint_4": [["SAT5","ANT12"],["SAT4","ANT11"]],
+        "constraint_5": ["ANT7","ANT12"]
+    }
+    
+}
