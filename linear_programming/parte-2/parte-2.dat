@@ -1,0 +1,77 @@
+set PLANES := plane0 plane1 plane2 plane3 plane4;
+
+set TICKETS := standard leisure business;
+
+# Parameter for each type of ticket
+param TICKET_PRICE := 
+standard 19
+leisure 49
+business 69;
+
+param TICKET_BAGGAGE := 
+standard 1
+leisure 20
+business 40;
+
+param PLANE_SEATS := 
+plane0 90
+plane1 120
+plane2 200
+plane3 150
+plane4 190;
+
+param PLANE_CAPACITY := 
+plane0 1700
+plane1 2700
+plane2 1300
+plane3 1700
+plane4 2000;
+
+
+set RUNWAYS := runway0 runway1 runway2 runway3;
+
+set GROUPS := one two three four five;
+
+set SLOTS := slot0 slot1 slot2 slot3 slot4 slot5;
+set CONSECUTIVE [one] := slot0 slot1;
+set CONSECUTIVE [two] := slot1 slot2;
+set CONSECUTIVE [three] := slot2 slot3;
+set CONSECUTIVE [four] := slot3 slot4;
+set CONSECUTIVE [five] := slot4 slot5;
+
+param SLOT_TIME :=
+slot0 540
+slot1 555
+slot2 570
+slot3 585
+slot4 600
+slot5 615;
+
+param ARRIVAL_TIME :=
+plane0 550
+plane1 535
+plane2 580
+plane3 595
+plane4 610;
+
+param PRICE_PENALTY :=
+plane0 100
+plane1 200
+plane2 150
+plane3 250
+plane4 200;
+
+param MAX_TIME :=
+plane0 615
+plane1 570
+plane2 600
+plane3 615
+plane4 630;
+
+param SLOT_AVAILABLE :slot0 slot1 slot2 slot3 slot4 slot5  :=
+runway0 0 0 0 0 1 1
+runway1 0 0 1 1 0 0
+runway2 1 1 1 0 0 1
+runway3 1 0 0 0 1 1
+;
+
